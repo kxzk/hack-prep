@@ -1,0 +1,84 @@
+[AI]: Hello, this is an automated system calling on behalf of [Therapist Name] to verify patient eligibility and benefits. May I speak with a representative, please?
+
+[Payer]: This is [Representative Name]. How can I assist you today?
+
+[AI]: Thank you, [Representative Name]. I'm calling to verify insurance coverage and benefits for a patient. I have their insurance card information. May I proceed?
+
+[Payer]: Yes, go ahead.
+
+[AI]: Great, thank you.
+[Action Group: Patient Identification]
+[Action: VerifyPatientInfo]
+The patient's name is [Patient Name], date of birth [DOB], and their insurance ID is [Insurance ID]. Can you confirm this information is correct?
+
+[Payer]: Yes, I've located the patient's information. What would you like to know?
+
+[AI]: Thank you.
+[Action Group: Insurance Verification]
+[Action: VerifyInsuranceCoverage]
+First, I'd like to confirm that the patient's insurance is active and covers mental health services.
+
+[Payer]: Yes, the insurance is active and does cover mental health services.
+
+[AI]: Excellent.
+[Action Group: Benefits Information]
+[Action: CheckCopayAmount]
+[Action: VerifyDeductible]
+Can you please tell me the patient's copay for therapy sessions and their current deductible status?
+
+[Payer]: The copay for therapy sessions is $30, and the patient has met $500 of their $1000 deductible.
+
+[AI]: Thank you.
+[Action Group: Service Authorization]
+[Action: CheckAuthorizationRequirement]
+Is pre-authorization required for therapy services?
+
+[Payer]: No, pre-authorization is not required for standard therapy services.
+
+[AI]: Great.
+[Action Group: Provider Network Status]
+[Action: VerifyNetworkStatus]
+Can you confirm if [Therapist Name] is in-network with this insurance plan?
+
+[Payer]: Yes, [Therapist Name] is in-network with this plan.
+
+[AI]: Thank you.
+[Action Group: Session Limits]
+[Action: CheckSessionLimits]
+[Action: GetRemainingSessionsCount]
+How many therapy sessions are covered per year, and how many does the patient have remaining?
+
+[Payer]: The plan covers 20 therapy sessions per year, and the patient has 15 remaining.
+
+[AI]: Excellent.
+[Action Group: Claim Submission]
+[Action: VerifyClaimSubmissionProcess]
+Can you confirm the correct procedure for submitting claims?
+
+[Payer]: Claims should be submitted electronically using [Specific Submission Process].
+
+[AI]: Understood.
+[Action Group: Payment Information]
+[Action: GetReimbursementRates]
+What is the reimbursement rate for a standard 60-minute therapy session?
+
+[Payer]: The reimbursement rate for a 60-minute therapy session is $100.
+
+[AI]: Thank you.
+[Action Group: Documentation Requirements]
+[Action: ListRequiredDocuments]
+Are there any specific documentation requirements for claims submission?
+
+[Payer]: Standard claims require a diagnosis code and CPT code. No additional documentation is needed unless requested.
+
+[AI]: Great, thank you for all this information. Is there a reference number for this call that I can note for our records?
+
+[Payer]: Yes, the reference number for this call is [Reference Number].
+
+[AI]: Thank you, [Representative Name]. You've been very helpful. Is there anything else I should know about this patient's coverage?
+
+[Payer]: No, that covers everything. Is there anything else you need assistance with?
+
+[AI]: No, that's all for now. Thank you for your time and assistance. Have a great day!
+
+[Payer]: You're welcome. Have a great day as well.

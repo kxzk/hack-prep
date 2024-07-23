@@ -1,0 +1,62 @@
+To create an Amazon AWS Bedrock agent for handling eligibility and benefits verification phone calls between therapists and payers, we'd want to design action groups and actions that cover the key aspects of this process. Here's a breakdown of potential action groups and actions:
+
+Patient Identification
+
+VerifyPatientInfo: Confirm patient's name, date of birth, and insurance ID
+CheckPatientEligibility: Determine if the patient is currently eligible for benefits
+
+
+Insurance Verification
+
+VerifyInsuranceCoverage: Check if the patient's insurance is active and covers mental health services
+GetCoverageDetails: Retrieve specific coverage information for mental health services
+
+
+Benefits Information
+
+CheckCopayAmount: Determine the patient's copay for therapy sessions
+VerifyDeductible: Check the patient's current deductible status and remaining amount
+GetOutOfPocketMax: Retrieve the patient's out-of-pocket maximum and current status
+
+
+Service Authorization
+
+CheckAuthorizationRequirement: Determine if pre-authorization is required for services
+InitiateAuthorizationRequest: Start the process for obtaining authorization if needed
+CheckAuthorizationStatus: Verify the status of an existing authorization
+
+
+Provider Network Status
+
+VerifyNetworkStatus: Check if the therapist is in-network with the insurance plan
+GetOutOfNetworkBenefits: Retrieve out-of-network coverage details if applicable
+
+
+Session Limits
+
+CheckSessionLimits: Verify the number of covered therapy sessions per year or treatment plan
+GetRemainingSessionsCount: Determine how many covered sessions the patient has left
+
+
+Claim Submission
+
+VerifyClaimSubmissionProcess: Confirm the correct procedure for submitting claims
+CheckClaimStatus: Investigate the status of a previously submitted claim
+
+
+Payment Information
+
+GetReimbursementRates: Retrieve the reimbursement rates for specific therapy services
+VerifyPaymentTimelines: Confirm expected timelines for claim processing and payment
+
+
+Documentation Requirements
+
+ListRequiredDocuments: Provide information on necessary documentation for claims or authorizations
+VerifyDocumentationSubmission: Check if required documentation has been received
+
+
+Updates and Changes
+
+CheckForPolicyUpdates: Verify any recent changes to the patient's policy or coverage
+UpdatePatientInformation: Process updates to patient's insurance or personal information
